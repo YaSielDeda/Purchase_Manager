@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "mRoqJDo/FBA6LZexzEg4Glk40s7gUJ2U/i4KNyIvs5yYN9MbyR585qsbSO8LuclM+toJ1ncdWTeY3DpPZ2pD3Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bereg\\source\\repos\\Purchase Manager\\Purchase Manager\\Purchase Manager\\Purchase Manager.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bereg\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\bereg\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\bereg\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
