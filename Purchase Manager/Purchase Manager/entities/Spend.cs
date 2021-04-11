@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Purchase_Manager.entities
 {
+    [Serializable]
     public class Spend
     {
         public string Name { get; set; }
@@ -11,6 +12,7 @@ namespace Purchase_Manager.entities
         public double Amount { get; set; }
         public string Description { get; set; }
         public DateTime SpendDate { get; }
+        public Spend() { }
 
         public Spend(string name, string category, double amount, string description, DateTime spendDate)
         {

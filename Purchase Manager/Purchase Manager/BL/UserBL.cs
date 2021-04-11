@@ -7,15 +7,22 @@ namespace Purchase_Manager.BL
 {
     public class UserBL
     {
-        User user = null;
+        private User _user;
+
+        public UserBL(User user)
+        {
+            _user = user;
+        }
+        public UserBL() { }
+
         public User CreateUser(string name)
         {
             if (name.Length == 0)
                 throw new FormatException("Enter the name");
 
-            user = new User(name);
+            _user = new User(name);
 
-            return user;
+            return _user;
         }
     }
 }

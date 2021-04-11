@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Purchase_Manager.entities
 {
+    [Serializable]
     public class Category
     {
         public string Name { get; set; }

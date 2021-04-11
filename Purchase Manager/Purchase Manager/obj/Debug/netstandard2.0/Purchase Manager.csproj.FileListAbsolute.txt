@@ -12,3 +12,4 @@ C:\Users\bereg\source\repos\Purchase Manager\Purchase Manager\Purchase Manager\o
 C:\Users\bereg\source\repos\Purchase Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\Purchase Manager.dll
 C:\Users\bereg\source\repos\Purchase Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\ref\Purchase Manager.dll
 C:\Users\bereg\source\repos\Purchase Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\Purchase Manager.pdb
+C:\Users\bereg\source\repos\Purchase Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\ListPage.xaml.g.cs

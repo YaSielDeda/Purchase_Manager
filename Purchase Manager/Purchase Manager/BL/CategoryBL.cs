@@ -5,12 +5,22 @@ using System.Text;
 
 namespace Purchase_Manager.BL
 {
-    class CategoryBL
+    public class CategoryBL
     {
-        public List<Category> categories = null;
+        private List<Category> _categories;
+
+        public CategoryBL(List<Category> categories)
+        {
+            _categories = categories;
+        }
+        public CategoryBL()
+        {
+            _categories = new List<Category>();
+        }
+
         public List<Category> CreateDefaultList()
         {
-            categories = new List<Category>() 
+            _categories = new List<Category>() 
             {
                 new Category("Rent", new List<string>() { "Property", "Transport" }),
                 new Category("Traveling", new List<string>()),
@@ -32,7 +42,7 @@ namespace Purchase_Manager.BL
                 new Category("Other", new List<string>() { }),
             };
 
-            return categories;
+            return _categories;
         }
         public Category CreateCategory(string name ,List<string> subcategories)
         {
@@ -48,11 +58,11 @@ namespace Purchase_Manager.BL
 
         public void AddCategory(Category category)
         {
-            categories.Add(category);
+            _categories.Add(category);
         }
         public void DeleteCategory(Category category)
         {
-            categories.Remove(category);
+            _categories.Remove(category);
         }
     }
 }

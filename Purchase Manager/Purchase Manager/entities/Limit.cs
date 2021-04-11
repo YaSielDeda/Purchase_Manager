@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Purchase_Manager.entities
 {
+    [Serializable]
     public class Limit
     {
         public string ID { get; }
@@ -11,6 +12,7 @@ namespace Purchase_Manager.entities
         public string Period { get; set; }
         public double LimitValue { get; set; }
         public double AllertValue { get; set; }
+        public Limit() { }
 
         public Limit(string category, string period, double limitValue, double allertValue)
         {
