@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 
 namespace Purchase_Manager.entities
 {
     [Serializable]
-    public class Profile
+    public class Profile : INotifyPropertyChanged
     {
         public User User { get; set; }
         public List<Category> Categories { get; set; }

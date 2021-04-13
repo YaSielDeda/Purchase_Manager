@@ -20,7 +20,10 @@ namespace Purchase_Manager
             Serializer serializer = new Serializer();
             serializer.SerializeDefault();
 
-            MainPage = new MainPage();
+            Profile profile = serializer.Deserialize("Test_user.xml");
+
+            //MainPage = new MainPage();
+            MainPage = new ListPage();
         }
 
         protected override void OnStart()

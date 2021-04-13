@@ -21,21 +21,48 @@ namespace Purchase_Manager.services
             var path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
             var filename = Path.Combine(path, "Test_user.xml");
 
-            /*XDocument document = new XDocument(
-                new XElement("Profile",
-                    new XElement("User",
-                        new XAttribute("Name", "Test"),
-                        new XAttribute("Registration Date", DateTime.Now)),
-                    new XElement("Categories",
-                        new XAttribute("Name" ,profile.Categories)
-                )));*/
-
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(Profile));
 
             using (FileStream fs = new FileStream(filename, FileMode.OpenOrCreate))
             {
                 xmlSerializer.Serialize(fs, profile);
             }
+        }
+        public Profile Deserialize(string xmlName)
+        {
+            string path;
+            string filename = null;
+            Profile profile = null;
+
+            try
+            {
+                path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+                filename = Path.Combine(path, xmlName);
+            }
+            catch (FileNotFoundException)
+            {
+                throw new FileNotFoundException("The XML-file doesn't exist!");
+            }
+            
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(Profile));
+
+            try
+            {
+                using (FileStream fs = new FileStream(filename, FileMode.Open))
+                {
+                    profile = (Profile)xmlSerializer.Deserialize(fs);
+                }
+            }
+            catch (FormatException)
+            {
+                throw new FormatException("The XML-file contains invalid data!");
+            }
+            catch
+            {
+                throw new Exception();
+            }
+
+            return profile;
         }
     }
 }

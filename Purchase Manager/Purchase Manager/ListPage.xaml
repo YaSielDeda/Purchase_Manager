@@ -1,9 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             Title="List page"
+             Title="Categories"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Purchase_Manager.ListPage">
-    <ContentPage.Content>
-        
-    </ContentPage.Content>
+    <StackLayout>
+        <Button Text="Add" Clicked="CategoryAddButton_Click"/>
+        <ListView x:Name="categoriesList"
+            BackgroundColor="Transparent"
+                  ItemsSource="{Binding}">
+            <Label Text="{Binding }"/>
+
+        </ListView>
+    </StackLayout>
 </ContentPage>
