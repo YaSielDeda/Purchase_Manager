@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace Purchase_Manager.entities
@@ -8,7 +9,22 @@ namespace Purchase_Manager.entities
     [Serializable]
     public class Profile : INotifyPropertyChanged
     {
-        public User User { get; set; }
+        private User _user;
+        private List<Category> _categories;
+        private List<Limit> _limits;
+        private List<Spend> _spends;
+        public User User
+        {
+            get
+            {
+                return _user;
+            }
+            set
+            {
+                _user = value;
+                OnPropertyChanged("User");
+            }
+        }
         public List<Category> Categories { get; set; }
         public List<Limit> Limits { get; set; }
         public List<Spend> Spends { get; set; }
@@ -19,6 +35,13 @@ namespace Purchase_Manager.entities
             Categories = categories;
             Limits = limits;
             Spends = spends;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        public virtual void OnPropertyChanged(string prop)
+        {
+            PropertyChanged?.Invoke(this,
+                new PropertyChangedEventArgs(prop));
         }
     }
 }

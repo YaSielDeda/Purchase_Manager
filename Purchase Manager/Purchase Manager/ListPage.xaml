@@ -1,14 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:View="clr-namespace:Purchase_Manager.entities"
              Title="Categories"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Purchase_Manager.ListPage">
+    <ContentPage.BindingContext>
+        <View:Profile/>
+    </ContentPage.BindingContext>
+
     <StackLayout>
-        <Button Text="Add" Clicked="CategoryAddButton_Click"/>
+        <Button Font="White" ContentLayout="Add" Clicked="Add_Category_Button_Click" Background="Green"/>
         <ListView x:Name="categoriesList"
             BackgroundColor="Transparent"
-                  ItemsSource="{Binding}">
-            <Label Text="{Binding }"/>
+            ItemSelected="categoriesList_ItemSelected"
+            ItemsSource="{Binding Categories}">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
 
         </ListView>
     </StackLayout>
