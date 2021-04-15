@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Purchase_Manager.ListPage.xaml", "ListPage.xaml", typeof(global::Purchase_Manager.ListPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Purchase_Manager.CategoriesList.xaml", "CategoriesList.xaml", typeof(global::Purchase_Manager.ListPage))]
 
 namespace Purchase_Manager {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("ListPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("CategoriesList.xaml")]
     public partial class ListPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

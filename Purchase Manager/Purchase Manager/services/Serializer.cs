@@ -28,6 +28,11 @@ namespace Purchase_Manager.services
                 xmlSerializer.Serialize(fs, profile);
             }
         }
+
+        public void Serialize(Profile profile)
+        {
+
+        }
         public Profile Deserialize(string xmlName)
         {
             string path;

@@ -9,7 +9,6 @@
     </ContentPage.BindingContext>
 
     <StackLayout>
-        <Button Font="White" Text="Add" Clicked="Add_Category_Button_Click" Background="Green"/>
         <ListView x:Name="categoriesList"
             BackgroundColor="Transparent"
             ItemSelected="categoriesList_ItemSelected"
@@ -20,7 +19,7 @@
                     <TextCell Text="{Binding Name}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
-
         </ListView>
+        <Button Font="White" Text="Add" Clicked="Add_Category_Button_Click" Background="Green"/>
     </StackLayout>
 </ContentPage>
