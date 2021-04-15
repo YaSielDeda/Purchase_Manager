@@ -23,7 +23,7 @@ namespace Purchase_Manager
             Profile profile = serializer.Deserialize("Test_user.xml");*/
 
             //MainPage = new MainPage();
-            MainPage = new ListPage();
+            MainPage = new NavigationPage(new ListPage());
         }
 
         protected override void OnStart()

@@ -9,7 +9,7 @@
     </ContentPage.BindingContext>
 
     <StackLayout>
-        <Button Font="White" ContentLayout="Add" Clicked="Add_Category_Button_Click" Background="Green"/>
+        <Button Font="White" Text="Add" Clicked="Add_Category_Button_Click" Background="Green"/>
         <ListView x:Name="categoriesList"
             BackgroundColor="Transparent"
             ItemSelected="categoriesList_ItemSelected"

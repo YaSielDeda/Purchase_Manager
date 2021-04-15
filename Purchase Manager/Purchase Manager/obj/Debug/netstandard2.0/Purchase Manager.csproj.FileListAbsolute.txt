@@ -13,3 +13,19 @@ C:\Users\bereg\source\repos\Purchase Manager\Purchase Manager\Purchase Manager\o
 C:\Users\bereg\source\repos\Purchase Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\ref\Purchase Manager.dll
 C:\Users\bereg\source\repos\Purchase Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\Purchase Manager.pdb
 C:\Users\bereg\source\repos\Purchase Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\ListPage.xaml.g.cs
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\bin\Debug\netstandard2.0\Purchase Manager.deps.json
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\bin\Debug\netstandard2.0\Purchase Manager.dll
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\bin\Debug\netstandard2.0\ref\Purchase Manager.dll
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\bin\Debug\netstandard2.0\Purchase Manager.pdb
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\Purchase Manager.csprojAssemblyReference.cache
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\ListPage.xaml.g.cs
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\Purchase Manager.AssemblyInfoInputs.cache
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\Purchase Manager.AssemblyInfo.cs
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\Purchase Manager.csproj.CoreCompileInputs.cache
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\Purchase Manager.dll
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\ref\Purchase Manager.dll
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\Purchase Manager.pdb
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\AddCategory.xaml.g.cs

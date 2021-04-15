@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BB+rcrH/08ww04Yo7g7GEZzwR7yh1Q8SzEEDs+oisClxmoHmtu0LRcRB9nriMTV4nDdMe44pI5CklOUhxY0dYg==",
+  "dgSpecHash": "aLy1vjNhSW1XxNstIJgnRwrgaE2n4ANjMzhBdqMlFjqQecRy9qQ2z14CqDCMyxOIN1OuomfOiz4JeZgItne8qQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bereg\\source\\repos\\Purchase Manager\\Purchase Manager\\Purchase Manager.Android\\Purchase Manager.Android.csproj",
+  "projectFilePath": "C:\\Users\\bereg\\source\\repos\\Purchase_Manager\\Purchase Manager\\Purchase Manager.Android\\Purchase Manager.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bereg\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",

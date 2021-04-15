@@ -32,9 +32,9 @@ namespace Purchase_Manager
 
         }
 
-        private void Add_Category_Button_Click(object sender, EventArgs args)
+        private async void Add_Category_Button_Click(object sender, EventArgs args)
         {
-            profile.Categories.Add(new Category() {Name="New Category", Subcategories=new List<string> { } });
+            await Navigation.PushAsync(new NavigationPage(new AddCategory()));
         }
     }
 }

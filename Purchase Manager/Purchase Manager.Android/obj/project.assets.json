@@ -2148,11 +2148,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bereg\\source\\repos\\Purchase Manager\\Purchase Manager\\Purchase Manager.Android\\Purchase Manager.Android.csproj",
+      "projectUniqueName": "C:\\Users\\bereg\\source\\repos\\Purchase_Manager\\Purchase Manager\\Purchase Manager.Android\\Purchase Manager.Android.csproj",
       "projectName": "Purchase Manager.Android",
-      "projectPath": "C:\\Users\\bereg\\source\\repos\\Purchase Manager\\Purchase Manager\\Purchase Manager.Android\\Purchase Manager.Android.csproj",
+      "projectPath": "C:\\Users\\bereg\\source\\repos\\Purchase_Manager\\Purchase Manager\\Purchase Manager.Android\\Purchase Manager.Android.csproj",
       "packagesPath": "C:\\Users\\bereg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bereg\\source\\repos\\Purchase Manager\\Purchase Manager\\Purchase Manager.Android\\obj\\",
+      "outputPath": "C:\\Users\\bereg\\source\\repos\\Purchase_Manager\\Purchase Manager\\Purchase Manager.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2173,8 +2173,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\bereg\\source\\repos\\Purchase Manager\\Purchase Manager\\Purchase Manager\\Purchase Manager.csproj": {
-              "projectPath": "C:\\Users\\bereg\\source\\repos\\Purchase Manager\\Purchase Manager\\Purchase Manager\\Purchase Manager.csproj"
+            "C:\\Users\\bereg\\source\\repos\\Purchase_Manager\\Purchase Manager\\Purchase Manager\\Purchase Manager.csproj": {
+              "projectPath": "C:\\Users\\bereg\\source\\repos\\Purchase_Manager\\Purchase Manager\\Purchase Manager\\Purchase Manager.csproj"
             }
           }
         }

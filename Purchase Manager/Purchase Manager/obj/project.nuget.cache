@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mRoqJDo/FBA6LZexzEg4Glk40s7gUJ2U/i4KNyIvs5yYN9MbyR585qsbSO8LuclM+toJ1ncdWTeY3DpPZ2pD3Q==",
+  "dgSpecHash": "dLN+m/jT4ludqI9f1dye1Q6v01nj3QVp6C2y0+9iTtL560A9oxK/USOgdFZbUxJQFLYFUttYVJTZhpgAVksepg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bereg\\source\\repos\\Purchase Manager\\Purchase Manager\\Purchase Manager\\Purchase Manager.csproj",
+  "projectFilePath": "C:\\Users\\bereg\\source\\repos\\Purchase_Manager\\Purchase Manager\\Purchase Manager\\Purchase Manager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bereg\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\bereg\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
