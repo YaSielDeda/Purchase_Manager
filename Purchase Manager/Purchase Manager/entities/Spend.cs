@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 
 namespace Purchase_Manager.entities
@@ -14,7 +15,7 @@ namespace Purchase_Manager.entities
         public DateTime SpendDate { get; }
         public Spend() { }
 
-        public Spend(string name, string category, double amount, string description, DateTime spendDate)
+        public Spend(string name, string category, double amount, string description)
         {
             Name = name;
             Category = category;

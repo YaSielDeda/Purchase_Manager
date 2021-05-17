@@ -35,7 +35,7 @@ namespace Purchase_Manager
 
             profile = serializer.Deserialize("Test_user.xml");
             profile.Categories.Add(category);
-            serializer.Serialize(profile);
+            serializer.Serialize(profile, "Test_user.xml");
         }
     }
 }

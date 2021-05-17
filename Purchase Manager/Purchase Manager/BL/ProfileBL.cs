@@ -10,6 +10,7 @@ namespace Purchase_Manager.BL
         private Profile _profile;
         private UserBL _userBL;
         private CategoryBL _categoryBL;
+        private SpendBL _spendBL;
 
         public ProfileBL(Profile profile)
         {
@@ -22,6 +23,11 @@ namespace Purchase_Manager.BL
         {
             _profile.User = _userBL.CreateUser(name);
             _profile.Categories = _categoryBL.CreateDefaultList();
+        }
+
+        public void AddSpend(string name, string category, double amount, string description)
+        {
+            _spendBL.CreateSpend(name, category, amount, description);
         }
     }
 }

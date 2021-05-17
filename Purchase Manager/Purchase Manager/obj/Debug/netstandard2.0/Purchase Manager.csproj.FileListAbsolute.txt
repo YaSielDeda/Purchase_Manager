@@ -29,3 +29,5 @@ C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\o
 C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\Purchase Manager.pdb
 C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\AddCategory.xaml.g.cs
 C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\CategoriesList.xaml.g.cs
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\AddPurchase.xaml.g.cs
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\HistoryOfPurchases.xaml.g.cs

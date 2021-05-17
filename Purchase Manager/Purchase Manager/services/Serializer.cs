@@ -29,9 +29,37 @@ namespace Purchase_Manager.services
             }
         }
 
-        public void Serialize(Profile profile)
+        public void Serialize(Profile profile, string xmlName)
         {
+            string path;
+            string filename = null;
+            try
+            {
+                path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+                filename = Path.Combine(path, xmlName);
+            }
+            catch (FileNotFoundException)
+            {
+                throw new FileNotFoundException("The XML-file doesn't exist!");
+            }
 
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(Profile));
+
+            try
+            {
+                using (FileStream fs = new FileStream(filename, FileMode.Open))
+                {
+                    xmlSerializer.Serialize(fs, profile);
+                }
+            }
+            catch (FormatException)
+            {
+                throw new FormatException("The XML-file contains invalid data!");
+            }
+            catch
+            {
+                throw new Exception();
+            }
         }
         public Profile Deserialize(string xmlName)
         {
