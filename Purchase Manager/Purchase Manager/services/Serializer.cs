@@ -90,9 +90,9 @@ namespace Purchase_Manager.services
             {
                 throw new FormatException("The XML-file contains invalid data!");
             }
-            catch
+            catch (Exception ex)
             {
-                throw new Exception();
+                Console.WriteLine(ex.Message);
             }
 
             return profile;

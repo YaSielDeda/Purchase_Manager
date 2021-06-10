@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace Purchase_Manager.entities
 {
@@ -12,7 +13,7 @@ namespace Purchase_Manager.entities
         public string Category { get; set; }
         public double Amount { get; set; }
         public string Description { get; set; }
-        public DateTime SpendDate { get; }
+        public DateTime SpendDate { get; set; }
         public Spend() { }
 
         public Spend(string name, string category, double amount, string description)

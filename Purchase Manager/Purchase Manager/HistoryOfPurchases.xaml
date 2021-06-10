@@ -8,4 +8,17 @@
         <View:Profile/>
     </ContentPage.BindingContext>
 
+    <StackLayout>
+        <ListView x:Name="spendsList"
+            BackgroundColor="Transparent"
+            ItemsSource="{Binding Spends}">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Font="White" Text="Add spend" Clicked="OnButtonClicked" Background="Green"/>
+    </StackLayout>
 </ContentPage>

@@ -1,4 +1,5 @@
-﻿using Purchase_Manager.entities;
+﻿using Purchase_Manager.BL;
+using Purchase_Manager.entities;
 using Purchase_Manager.services;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,6 @@ namespace Purchase_Manager
             InitializeComponent();
 
             serializer = new Serializer();
-            serializer.SerializeDefault();
 
             profile = serializer.Deserialize("Test_user.xml");
 
@@ -67,6 +67,8 @@ namespace Purchase_Manager
 
         private void Add_Purchase_Button_Click(object sender, EventArgs e)
         {
+            Serializer serializer = new Serializer();
+
             Spend spend = new Spend 
             { 
                 Name = nameOfPruchase.Text,
@@ -75,11 +77,13 @@ namespace Purchase_Manager
                 Amount = double.Parse(amount.Text)
             };
 
-            profile.Spends.Add(spend);
+            profile = serializer.Deserialize("Test_user.xml");
+            ProfileBL profileBL = new ProfileBL(profile);
+            profileBL.AddSpend(spend);
 
             serializer.Serialize(profile, "Test_user.xml");
 
-            Navigation.PushAsync(new NavigationPage(new HistoryOfPurchases()));
+            Navigation.PushAsync(new HistoryOfPurchases());
         }
     }
 }

@@ -31,7 +31,7 @@ namespace Purchase_Manager
         private void Add_Category_Button_Click(object sender, EventArgs args)
         {
             Serializer serializer = new Serializer();
-            serializer.SerializeDefault();
+            //serializer.SerializeDefault();
 
             profile = serializer.Deserialize("Test_user.xml");
             profile.Categories.Add(category);

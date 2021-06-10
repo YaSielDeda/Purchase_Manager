@@ -17,12 +17,11 @@ namespace Purchase_Manager
         {
             InitializeComponent();
 
-            /*Serializer serializer = new Serializer();
+            Serializer serializer = new Serializer();
             serializer.SerializeDefault();
 
-            Profile profile = serializer.Deserialize("Test_user.xml");*/
+            Profile profile = serializer.Deserialize("Test_user.xml");
 
-            //MainPage = new MainPage();
             //MainPage = new NavigationPage(new ListPage());
             MainPage = new NavigationPage(new HistoryOfPurchases());
         }
