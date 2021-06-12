@@ -22,40 +22,50 @@ namespace Purchase_Manager
         {
             InitializeComponent();
 
-            StackLayout stackLayout = new StackLayout();
+            //StackLayout stackLayout = new StackLayout();
 
             Serializer serializer = new Serializer();
             profile = serializer.Deserialize("Test_user.xml");
 
-            Label header = new Label
-            {
-                Text = "History of purchases",
-                FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-                HorizontalOptions = LayoutOptions.Center
-            };
+            BindingContext = profile;
+
+            //Label header = new Label
+            //{
+            //    Text = "History of purchases",
+            //    FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+            //    HorizontalOptions = LayoutOptions.Center
+            //};
 
             purchases = new ListView();
             names = new List<string>();
+
             foreach (var item in profile.Spends)
             {
-                names.Add(item.Name + "\t" + item.SpendDate + Environment.NewLine + item.Category);
+                names.Add(item.Name + " " + item.SpendDate + " " + item.Amount + " " + item.Category);
             }
             purchases.ItemsSource = names;
-            Content = new StackLayout { Children = { header, purchases } };
+            //Content = new StackLayout { Children = { header, purchases } };
 
-            Button button = new Button
-            {
-                Text = "Add new spend",
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.End
-            };
+            //Button button = new Button
+            //{
+            //    Text = "Add new spend",
+            //    HorizontalOptions = LayoutOptions.Center,
+            //    VerticalOptions = LayoutOptions.End
+            //};
 
-            purchases.ItemSelected += ClickOnElement;
-            button.Clicked += OnButtonClicked;
+            //purchases.ItemSelected += ClickOnElement;
+            //button.Clicked += OnButtonClicked;
 
-            stackLayout.Children.Add(purchases);
-            stackLayout.Children.Add(button);
-            Content = stackLayout;
+            //stackLayout.Children.Add(purchases);
+            //stackLayout.Children.Add(button);
+            //Content = stackLayout;
+        }
+        private void ClickOnElementXAML(object sender, System.EventArgs e)
+        {
+            var some = spendsList.SelectedItem;
+            int index = names.IndexOf(spendsList.SelectedItem.ToString());
+            spend = profile.Spends[names.IndexOf(purchases.SelectedItem.ToString())];
+            Navigation.PushAsync(new EditPurchase(spend, index));
         }
         private void ClickOnElement(object sender, System.EventArgs e)
         {

@@ -18,7 +18,7 @@ namespace Purchase_Manager
             InitializeComponent();
 
             Serializer serializer = new Serializer();
-            serializer.SerializeDefault();
+            //serializer.SerializeDefault();
 
             Profile profile = serializer.Deserialize("Test_user.xml");
 

@@ -82,6 +82,7 @@ namespace Purchase_Manager
             profile = serializer.Deserialize("Test_user.xml");
             ProfileBL profileBL = new ProfileBL(profile);
             profileBL.DeleteSpendByIndex(indexOfElement);
+
             serializer.Serialize(profile, "Test_user.xml");
 
             Navigation.PushAsync(new HistoryOfPurchases());

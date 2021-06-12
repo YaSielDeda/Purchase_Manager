@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using System.Xml.Serialization;
 
@@ -81,8 +82,12 @@ namespace Purchase_Manager.services
 
             try
             {
+                string rawXML = File.ReadAllText(filename);
+                string cleanXML = Regex.Replace(rawXML, @"(?<=</Profile>)[\w\W]*</Profile>", "");
+                File.WriteAllText(filename, cleanXML);
+                string test = File.ReadAllText(filename);
                 using (FileStream fs = new FileStream(filename, FileMode.Open))
-                {
+                {                   
                     profile = (Profile)xmlSerializer.Deserialize(fs);
                 }
             }

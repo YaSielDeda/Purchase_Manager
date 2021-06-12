@@ -8,17 +8,23 @@
         <View:Profile/>
     </ContentPage.BindingContext>
 
-    <StackLayout>
-        <ListView x:Name="spendsList"
-            BackgroundColor="Transparent"
-            ItemsSource="{Binding Spends}">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView   x:Name="spendsList"
+                        GroupDisplayBinding="{Binding Title}"
+                        GroupShortNameBinding="{Binding ShortName}"
+                        BackgroundColor="Transparent"
+                        ItemSelected="ClickOnElementXAML"
+                        ItemsSource="{Binding Spends}">
 
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding Name}"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <Button Font="White" Text="Add spend" Clicked="OnButtonClicked" Background="Green"/>
-    </StackLayout>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}"
+                                  Detail="{Binding SpendDate}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Font="White" Text="Add spend" TextColor="White" Clicked="OnButtonClicked" Background="Blue"/>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
