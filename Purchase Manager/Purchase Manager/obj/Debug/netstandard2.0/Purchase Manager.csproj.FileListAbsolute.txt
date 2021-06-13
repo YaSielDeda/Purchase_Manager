@@ -34,3 +34,5 @@ C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\o
 C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\EditPurchase.xaml.g.cs
 C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\Histogram.xaml.g.cs
 C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\Menu.xaml.g.cs
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\HstDetail.xaml.g.cs
+C:\Users\bereg\source\repos\Purchase_Manager\Purchase Manager\Purchase Manager\obj\Debug\netstandard2.0\HstFlyout.xaml.g.cs

@@ -36,14 +36,14 @@ namespace Purchase_Manager
             //    HorizontalOptions = LayoutOptions.Center
             //};
 
-            purchases = new ListView();
-            names = new List<string>();
+            //purchases = new ListView();
+            //names = new List<string>();
 
-            foreach (var item in profile.Spends)
-            {
-                names.Add(item.Name + " " + item.SpendDate + " " + item.Amount + " " + item.Category);
-            }
-            purchases.ItemsSource = names;
+            //foreach (var item in profile.Spends)
+            //{
+            //    names.Add(item.Name + " " + item.SpendDate + " " + item.Amount + " " + item.Category);
+            //}
+            //purchases.ItemsSource = names;
             //Content = new StackLayout { Children = { header, purchases } };
 
             //Button button = new Button
@@ -62,9 +62,8 @@ namespace Purchase_Manager
         }
         private void ClickOnElementXAML(object sender, System.EventArgs e)
         {
-            var some = spendsList.SelectedItem;
-            int index = names.IndexOf(spendsList.SelectedItem.ToString());
-            spend = profile.Spends[names.IndexOf(purchases.SelectedItem.ToString())];
+            int index = profile.Spends.IndexOf((Spend)spendsList.SelectedItem);
+            spend = (Spend)spendsList.SelectedItem;
             Navigation.PushAsync(new EditPurchase(spend, index));
         }
         private void ClickOnElement(object sender, System.EventArgs e)

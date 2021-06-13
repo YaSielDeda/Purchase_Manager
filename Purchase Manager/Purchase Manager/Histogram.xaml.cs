@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Syncfusion.SfChart.XForms;
+using System.Collections.ObjectModel;
 
 namespace Purchase_Manager
 {
@@ -19,6 +20,9 @@ namespace Purchase_Manager
         public Histogram()
         {
             InitializeComponent();
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NDU4Nzc4QDMxMzkyZTMxMmUzMFFadmVERkJ4OFpEZ2J6TGpOKzU4d0tvenR3SFZJcHpQNzgzd3VGeVJtRTg9");
+
+            StackLayout stackLayout = new StackLayout();
 
             Serializer serializer = new Serializer();
             Profile profile = serializer.Deserialize("Test_user.xml");
@@ -29,12 +33,14 @@ namespace Purchase_Manager
 
             HistogramSeries histogramSeries = new HistogramSeries()
             {
-                ItemsSource = esBL.GetAllStatistics(),
+                ItemsSource = esBL.TestData(),
                 XBindingPath = "XValue",
                 YBindingPath = "YValue",
                 Interval = 20
             };
             chart.Series.Add(histogramSeries);
+            stackLayout.Children.Add(chart);
+            Content = stackLayout;
         }
     }
 }

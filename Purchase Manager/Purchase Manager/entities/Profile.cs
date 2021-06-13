@@ -25,18 +25,6 @@ namespace Purchase_Manager.entities
                 OnPropertyChanged("User");
             }
         }
-        /*public List<Spend> Spend
-        {
-            get
-            {
-                return _spends;
-            }
-            set
-            {
-                _spends = value;
-                OnPropertyChanged("Spend");
-            }
-        }*/
         public List<Category> Categories { get; set; }
         public List<Limit> Limits { get; set; }
         public List<Spend> Spends { get; set; }

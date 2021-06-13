@@ -1,6 +1,7 @@
 ﻿using Purchase_Manager.entities;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 
@@ -15,7 +16,17 @@ namespace Purchase_Manager.BL
             _spends = spends;
             _categories = categories;
         }
+        public ObservableCollection<HistogramModel> TestData()
+        {
+            ObservableCollection<HistogramModel> observableCollection = new ObservableCollection<HistogramModel>();
+            observableCollection.Add(new HistogramModel("Jan", 50));
+            observableCollection.Add(new HistogramModel("Feb", 70));
+            observableCollection.Add(new HistogramModel("Mar", 65));
+            observableCollection.Add(new HistogramModel("Apr", 57));
+            observableCollection.Add(new HistogramModel("May", 48));
 
+            return observableCollection;
+        }
         public Dictionary<string, double> GetAllStatistics()
         {
             Dictionary<string, double> statistics = new Dictionary<string, double>();
@@ -27,9 +38,9 @@ namespace Purchase_Manager.BL
             DateTime nowDate = DateTime.Now;
             foreach (var spend in _spends)
             {
-
                 statistics[spend.Category] += spend.Amount;
             }
+
             return statistics;
         }
         public Dictionary<string, double> GetYearStatistics()

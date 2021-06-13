@@ -27,7 +27,6 @@ namespace Purchase_Manager.BL
                 new Category("Repair", new List<string>() { "Phone", "Property" }),
                 new Category("Education", new List<string>() { "University", "Courses" }),
                 new Category("Household", new List<string>() { "Furniture", "Tech" }),
-                new Category("Sport", new List<string>() { "Nutrition", "Gym" }),
                 new Category("Communication", new List<string>() { "Internet", "TV" }),
                 new Category("Utilities", new List<string>() { "Electricity", "Water" }),
                 new Category("Transport", new List<string>() { "Vehicle", "Public transport" }),

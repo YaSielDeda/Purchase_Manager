@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "LrnPDy34Pq9HUnXBcoAuWZp+bk9KrSip6/pLB3ZTTKOwGOmQQZ7mtADYgbr6mG2Sju5GgIUxURwusTr4Nj5e/Q==",
+  "dgSpecHash": "/sGee1mGn9GRnskAeDkMZa91UNIMgQjiyITU0FWD5QESadcPhnUsbu5UDcHQl8QQzqEOBMA4ZwZqLxau5RJo/w==",
   "success": true,
   "projectFilePath": "C:\\Users\\bereg\\source\\repos\\Purchase_Manager\\Purchase Manager\\Purchase Manager.Android\\Purchase Manager.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\bereg\\.nuget\\packages\\microcharts\\0.9.5.9\\microcharts.0.9.5.9.nupkg.sha512",
+    "C:\\Users\\bereg\\.nuget\\packages\\skiasharp\\2.80.2\\skiasharp.2.80.2.nupkg.sha512",
+    "C:\\Users\\bereg\\.nuget\\packages\\skiasharp.views\\2.80.2\\skiasharp.views.2.80.2.nupkg.sha512",
     "C:\\Users\\bereg\\.nuget\\packages\\syncfusion.licensing\\19.1.0.67\\syncfusion.licensing.19.1.0.67.nupkg.sha512",
     "C:\\Users\\bereg\\.nuget\\packages\\syncfusion.xamarin.core\\19.1.0.67\\syncfusion.xamarin.core.19.1.0.67.nupkg.sha512",
     "C:\\Users\\bereg\\.nuget\\packages\\syncfusion.xamarin.sfchart\\19.1.0.67\\syncfusion.xamarin.sfchart.19.1.0.67.nupkg.sha512",
