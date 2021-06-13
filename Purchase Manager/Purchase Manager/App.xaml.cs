@@ -22,8 +22,8 @@ namespace Purchase_Manager
 
             Profile profile = serializer.Deserialize("Test_user.xml");
 
-            //MainPage = new NavigationPage(new ListPage());
-            MainPage = new NavigationPage(new HistoryOfPurchases());
+            MainPage = new NavigationPage(new Menu());
+            //MainPage = new NavigationPage(new HistoryOfPurchases());
         }
 
         protected override void OnStart()

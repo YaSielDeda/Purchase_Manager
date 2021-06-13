@@ -64,5 +64,9 @@ namespace Purchase_Manager.BL
         {
             _categories.Remove(category);
         }
+        internal List<Category> GetCategory()
+        {
+            return _categories;
+        }
     }
 }

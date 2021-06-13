@@ -10,6 +10,7 @@
       "Purchase Manager/1.0.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
+          "Syncfusion.Xamarin.SfChart": "19.1.0.67",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
         },
@@ -21,6 +22,38 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Syncfusion.Licensing/19.1.0.67": {
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "19.1.0.67",
+            "fileVersion": "19.1.0.67"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.Core/19.1.0.67": {
+        "dependencies": {
+          "Syncfusion.Licensing": "19.1.0.67",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Core.XForms.dll": {
+            "assemblyVersion": "19.1451.0.67",
+            "fileVersion": "19.1451.0.67"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.SfChart/19.1.0.67": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "19.1.0.67",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfChart.XForms.dll": {
+            "assemblyVersion": "19.1451.0.67",
+            "fileVersion": "19.1451.0.67"
+          }
         }
       },
       "System.Numerics.Vectors/4.5.0": {
@@ -79,6 +112,27 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/19.1.0.67": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4cdYZvWDJvKLJR2C72KBFODhV/yYW71lW+w7QZL6/kMVlw/Cq71xJLWUU9jZGa2DeB+NA46g1o7gqPdy5Gan0g==",
+      "path": "syncfusion.licensing/19.1.0.67",
+      "hashPath": "syncfusion.licensing.19.1.0.67.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.Core/19.1.0.67": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+Kbrd2JusPMrevPH0X2n+rDgDlJgqndnd3ld8zwGw4zDk7S5sBNSFI87vfRioSRR03yKtjqYaIE1e93z1C2+mQ==",
+      "path": "syncfusion.xamarin.core/19.1.0.67",
+      "hashPath": "syncfusion.xamarin.core.19.1.0.67.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.SfChart/19.1.0.67": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YCpGFSMhBFW7q82H2ToEKe0AhlUUsimNPp/UUOm+0UCRjPXbVPfonZT0ZnbzEB5iKftkiWltxISleP+27jF80g==",
+      "path": "syncfusion.xamarin.sfchart/19.1.0.67",
+      "hashPath": "syncfusion.xamarin.sfchart.19.1.0.67.nupkg.sha512"
     },
     "System.Numerics.Vectors/4.5.0": {
       "type": "package",

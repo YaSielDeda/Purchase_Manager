@@ -25,6 +25,7 @@ namespace Purchase_Manager.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Syncfusion.SfChart.XForms.Droid.Resource.Id.content = global::Purchase_Manager.Droid.Resource.Id.content;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::Purchase_Manager.Droid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::Purchase_Manager.Droid.Resource.Attribute.font;
 			global::Xamarin.Essentials.Resource.Attribute.fontProviderAuthority = global::Purchase_Manager.Droid.Resource.Attribute.fontProviderAuthority;

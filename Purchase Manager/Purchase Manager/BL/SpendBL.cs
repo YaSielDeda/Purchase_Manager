@@ -14,6 +14,10 @@ namespace Purchase_Manager.BL
         {
             _spends = spends;
         }
+        internal List<Spend> GetSpends()
+        {
+            return _spends;
+        }
         public SpendBL() { }
 
         public List<Spend> CreateDefaultSpendsList()
